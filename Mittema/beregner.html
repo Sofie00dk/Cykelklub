@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <meta charset="UTF-8">
+   
+    <title>Beregningssystem</title>
+</head>
+<body>
+    <h1 id="overskriften">cykel højde</h1>
+	<p id ="højde">din højde i cm</p>
+	
+
+	<style>
+		input{
+		margin-left: 2em;
+		background-color: #ffdd;
+		text-align: left;
+		}
+		button{
+			background-color: blue;
+		}
+	</style>
+
+
+	<form><br>højde<input type="text" name="højdefelt" id = "højdefelt"><br> 
+        
+		
+		 <br>racer <input type="text" name="racerfelt" id = "racerfelt"><br>
+		
+		
+   <br> <button type ="button" onClick="minFunktion()">beregn racer i cm</button><br>
+	</form>
+	
+</body>
+</html>
+
+<script>
+		function minFunktion(){  
+		var højde, racer;           
+			
+		højde=  document.getElementById("højdefelt").value;
+		racer = højde*0.66;
+			
+			
+		
+		
+		}
+	</script>
